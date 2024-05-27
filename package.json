@@ -1,0 +1,25 @@
+{
+  "name": "retcon-client",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "module": "dist/index.m.js",
+  "unpkg": "dist/index.umd.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "rm -rf dist && microbundle --tsconfig tsconfig.json --no-sourcemap"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "microbundle": "^0.15.1"
+  },
+  "dependencies": {
+    "@types/config": "^3.3.4",
+    "@types/websocket": "^1.0.10",
+    "config": "^3.3.11",
+    "iso8601-duration": "^2.1.2",
+    "websocket": "^1.0.35"
+  }
+}
